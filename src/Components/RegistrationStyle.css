@@ -45,7 +45,7 @@ select {
 }
 input {
   width: 275px;
-  padding: 12px 0px;
+  padding: 12px 5px;
   border-radius: 5px;
 }
 form {

@@ -10,6 +10,7 @@ function Regitration() {
     email: "",
     password: "",
     username: "",
+    role: "",
   });
   const handleChange = async (e) => {
     const { name, value } = e.target;
@@ -33,6 +34,7 @@ function Regitration() {
                 <div>
                   <p>Full name</p>
                   <input
+                    placeholder="Full Name"
                     name="name"
                     type="text"
                     value={formData.name}
@@ -42,6 +44,7 @@ function Regitration() {
                 <div>
                   <p>E-mail</p>
                   <input
+                    placeholder="Email"
                     name="email"
                     type="email"
                     value={formData.email}
@@ -50,13 +53,14 @@ function Regitration() {
                 </div>
                 <div>
                   <p>Password</p>
-                  <input type="password" />
+                  <input type="password" placeholder="Password" />
                 </div>
               </section>
               <section className="input2">
                 <div>
                   <p>User Name</p>
                   <input
+                    placeholder="Useer Name"
                     name="username"
                     type="text"
                     value={formData.username}
@@ -65,14 +69,19 @@ function Regitration() {
                 </div>
                 <div>
                   <p>Role</p>
-                  <select>
-                    <option value="mentor">Mentor</option>
-                    <option value="student">Student</option>
+                  <select
+                    name="role"
+                    value={formData.role}
+                    onChange={handleChange}
+                  >
+                    <option value="Mentor">Mentor</option>
+                    <option value="Student">Student</option>
                   </select>
                 </div>
                 <div>
                   <p>Confirm Password</p>
                   <input
+                    placeholder="Confirm Password"
                     name="password"
                     type="password"
                     value={formData.password}
