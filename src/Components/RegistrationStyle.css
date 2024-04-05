@@ -64,3 +64,10 @@ form button {
   font-size: 20px;
   border: none;
 }
+.lg{
+  color: white;
+  font-size: 2vh;
+}
+a{
+  text-decoration: none;
+}
