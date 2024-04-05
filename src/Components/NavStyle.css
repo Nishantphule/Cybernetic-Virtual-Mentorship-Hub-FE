@@ -12,13 +12,13 @@ nav {
 .links ul {
   display: flex;
   list-style-type: none;
-  gap: 15px;
+  gap: 32px;
   font-size: 24px;
   font-weight: 500;
 }
 .links {
   display: flex;
-  gap: 25px;
+  gap: 35px;
   align-items: center;
 }
 a {
@@ -31,4 +31,42 @@ a:hover {
   border-radius: 50%;
   width: 45px;
   height: 45px;
+}
+@media only screen and (min-width: 300px) {
+  .logo {
+    width: 120px;
+  }
+  .links ul {
+    display: none;
+  }
+  .user {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .logo {
+    width: 180px;
+  }
+  .links ul {
+    display: none;
+  }
+  .user {
+    width: 35px;
+    height: 35px;
+  }
+  .menu {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .menu {
+    display: none;
+  }
+  .links ul {
+    display: flex;
+  }
+  .logo {
+    width: 223px;
+  }
 }

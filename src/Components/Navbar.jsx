@@ -28,6 +28,7 @@ function Navbar() {
             </li>
           </ul>
           <img src={user} alt="user" className="user" />
+          <i className="fa-solid fa-bars menu"></i>
         </section>
       </nav>
     </>
