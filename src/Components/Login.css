@@ -1,0 +1,145 @@
+main {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  align-items: center;
+}
+.heading > h1 {
+  font-family: "Inter";
+  font-size: 5vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+}
+
+.form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 5vh;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+.input1,
+.input2 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+form p {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+select {
+  padding: 12px 100px;
+  border-radius: 5px;
+}
+input {
+  width: 275px;
+  padding: 12px 11px;
+  border-radius: 5px;
+}
+
+.form button {
+  font-family: "Inter";
+  padding: 12px 100px;
+  border-radius: 5px;
+  background-color: #3ede3b;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  margin-bottom: 3vh;
+}
+a {
+  text-decoration: none;
+}
+.reg {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* @media only  screen and (max-width: 300px){
+  h1{
+    font-size: 1vh;
+
+  }
+  .form{
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid wheat;
+  }
+}
+@media only  screen and (max-width: 768px){
+  .heading h1{
+    font-size: 50px;
+  }
+  .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-left: 5vw;
+  }
+}
+@media only  screen and (max-width: 1024px){
+  .heading h1{
+    font-size: 50px;
+  }
+  .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-left: 5vw;
+  }
+} */
+
+/* Styles for screens with a maximum width of 375px */
+@media only screen and (max-width: 375px) {
+  .form {
+    width: 90%;
+  }
+  input {
+    width: 100%;
+  }
+  .form button {
+    padding: 12px 50px;
+  }
+}
+
+/* Styles for screens with a maximum width of 765px */
+@media only screen and (max-width: 765px) {
+  .form {
+    width: 80%;
+  }
+  input {
+    width: 100%;
+  }
+  .form button {
+    padding: 12px 75px;
+  }
+}
+
+/* Styles for screens with a maximum width of 1024px */
+@media only screen and (max-width: 1024px) {
+  .form {
+    width: 70%;
+  }
+  input {
+    width: 100%;
+  }
+  .form button {
+    padding: 12px 100px;
+  }
+}

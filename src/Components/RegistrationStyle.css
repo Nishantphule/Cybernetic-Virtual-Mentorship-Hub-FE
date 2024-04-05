@@ -24,11 +24,13 @@ main {
 .form-input {
   display: flex;
   gap: 70px;
+  width: 100%;
   align-items: center;
 }
 .input1 {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 50px;
 }
 .input2 {
@@ -65,6 +67,15 @@ form button {
   font-size: 20px;
   border: none;
 }
+.lg {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 300px) {
   .form-input {
     flex-direction: column;

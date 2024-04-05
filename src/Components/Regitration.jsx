@@ -2,7 +2,7 @@ import { useState } from "react";
 import React from "react";
 import Navbar from "./Navbar";
 import "./RegistrationStyle.css";
-import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Regitration() {
   const [formData, setFormData] = useState({
@@ -89,6 +89,9 @@ function Regitration() {
                   />
                 </div>
               </section>
+            </div>
+            <div className="lg">
+              Already a User ?<Link to="/login">Login Here!</Link>{" "}
             </div>
             <button type="submit">Submit</button>
           </form>
