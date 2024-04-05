@@ -32,7 +32,7 @@ function Login() {
                 <input type="text" placeholder="Enter Username or Email" required name="username" value={formData.username} onChange={handleChange}></input>
               </div>
               <div>
-                <p>Confirm Password:</p>
+                <p>Password:</p>
                 <input type="password" placeholder="Confirm Password" required name="password" value={formData.password} onChange={handleChange} />
               </div>
             </section>
